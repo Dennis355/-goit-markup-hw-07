@@ -1,0 +1,292 @@
+
+
+.logo-ferst{
+    display: inline-block;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em; 
+    color: #2196F3;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* margin-top: 24;
+    margin-bottom: 25; */
+    
+    }
+    
+    
+    
+    .logo-ferst .logo-lest{
+        display: inline-block;
+        color: #212121;
+        margin-top: 24px;
+        margin-bottom: 25px;
+        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .logo-ferst:hover,
+    .logo-ferst:focus{
+        cursor: pointer;
+        color: $notrend-color;
+        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
+    }
+    /* container  */
+    .container{
+    
+     width: 1200px;
+     padding-left: 15px;
+     padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0;
+           
+        }
+    
+    
+    /* header navigation */
+    .header-container {
+            display: flex;
+        justify-content: space-between;
+        background:#FFFFFF;
+        
+        }
+        
+    
+        .header-nav{
+            display: flex;
+            align-items:center;
+            overflow: hidden;
+            margin-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+    
+        }
+    
+    .header-nav__link{
+        padding-bottom: 32px;
+        padding-top: 32px;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #212121;
+    
+        transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        .header-nav__link--aktiv{
+           display: block;
+                  
+            padding-bottom: 32px;
+            padding-top: 32px;
+            
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1,14;
+            letter-spacing: 0.02em;
+            color: #2196F3;
+            transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+       
+    
+        
+        .header-nav .logo{
+         margin-right:93px; 
+           
+         transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .header-nav__item{
+            margin-right: 40px;
+           
+        }
+        .header-nav__item:last-child{
+            margin-right: 0px;
+            
+        }
+          /* header finich */
+    
+    
+      
+    .header-nav__link:hover, 
+    .header-nav__link:focus
+    {
+        color: $trend-color; 
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        /* border-bottom: 4px  solid  #2196F3; */
+    }
+    
+    /* Нижнее подчеркивание активной страници */
+    
+    
+    
+    a {
+        position: relative;
+       
+      }
+      a:after {
+        display: block;
+        position: absolute;
+      /*задаём цвет линии*/
+        content: "";
+       
+      }  
+      .header-nav__link--aktiv::after{
+        content: "";
+        display: block;
+        position: absolute;
+        padding-top: 0;
+        margin-top: 28px;
+        width: 100%;
+        height: 4px;
+        background: #2196F3;
+        border-radius: 2px;
+    
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* header contacts */
+            .header-cont {
+                display: flex;
+                 align-items:center; 
+                
+    
+    color: $notrend-kolor;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.14; 
+                letter-spacing: 0.02em;  
+              
+                transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+             .header-webadres {
+                    color: var(--notrend-color);
+                    padding-top: 32px;
+                    padding-bottom: 32px;
+                    margin-left: 10px;
+                    margin-right: 30px;
+                    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+         .header-contacts {
+               color: var(--notrend-color);
+               padding-top: 32px;
+               padding-bottom: 32px;
+               margin-left: 10px;           
+               transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+                 
+            }
+    
+    
+    
+                    .item:hover .email
+                     {
+                        color: #2196F3; 
+                        fill:#2196F3;
+                        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+                    .item:hover, 
+                    .item:focus-within   .email {
+                    
+                        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        /* color: var(--trend-color);  */
+                        fill:#2196F3;
+                    }
+                   
+                    .item:hover .web
+                    {
+                        color: #2196F3; 
+                         fill:#2196F3; 
+                         transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+                    .item:hover, 
+                    .item:focus-within .web {
+                    
+                        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+                        color: #2196F3;   
+                        fill:#2196F3;
+                    }
+                  
+    
+    .header-contacts:focus-within  .email
+    {
+        fill:#2196F3;
+        color: #2196F3; 
+        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .header-contacts:focus-within .web, 
+    .header-contacts:focus
+    {
+        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill:#2196F3;
+        color: #2196F3;  
+    }
+    
+    
+    .header-webadres:hover, 
+    .header-webadres:focus
+    {
+        fill:#2196F3;
+        color: #2196F3; 
+        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    } 
+    
+    
+    
+    
+    
+    
+    
+    .header-cont .item{
+        display: flex;
+        align-items: center;
+        /* margin-left: 10px; */
+        /* margin-right: 50px; */
+    }
+    .header-cont .item:last-child{
+        margin-right: 0px;
+        margin-left: 10px;
+        
+    }
+    .header-logadres{
+        display: flex;
+        align-items: center;
+        /* border-bottom: 3px solid transparent; */
+        
+    
+        
+    }
+    
+    .clients-icon.email{
+        transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 0;
+        display: block;
+        
+        border: 0;
+        /* margin-left: 10px; */
+        }
+        .clients-icon.web{
+           
+            border: 0;
+            
+        }
