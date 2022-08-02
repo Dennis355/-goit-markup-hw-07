@@ -1,0 +1,44 @@
+
+
+
+.difference{
+    display: block;
+    outline: 1px solid tomato;
+}
+
+.difference__icon{
+    margin: 0 0;
+    padding: 0 0;
+    width: 450px;
+    height: 220px;
+    display: block;
+    outline: 1px solid tomato;
+    // text-align: center;
+    border-radius: 4px;
+    background: #F5F4FA;
+
+}
+.difference__icon--center{
+    display: inline-block;
+    text-align: center;
+}
+
+
+   
+.difference__header{
+    color:#212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
+      }
+
+.difference__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $notrend-kolor;
+    }
