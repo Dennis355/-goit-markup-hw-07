@@ -1,0 +1,262 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul, h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: inline-block;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
+.logo--ferst {
+  color: #2196F3;
+}
+
+.logo--lest {
+  color: #212121;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.button-modal {
+  /* display: block; */
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 490px;
+  top: 8px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-modal {
+  display: block;
+  width: 528px;
+  height: 581px;
+  padding-left: 41px;
+  padding-right: 39px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.textform {
+  display: block;
+  margin-bottom: 18px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.textarea {
+  resize: none;
+}
+.textarea:focus {
+  outline: 1px solid #2196F3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label {
+  /* outline: 5 px solid tomato; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.labpolisity-text {
+  display: flex;
+  align-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.lab-text {
+  display: block;
+  margin-bottom: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-swg {
+  display: block;
+  box-sizing: content-box;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: rotateY(8px);
+  width: 12px;
+  height: 12px;
+  fill: #212121;
+}
+.form-swg:hover {
+  fill: #2196f3;
+}
+
+.form-input {
+  display: block;
+  height: 40px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 40px;
+}
+.form-input:hover {
+  border: 1px solid #2196F3;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus {
+  outline: 1px solid #2196F3;
+}
+
+.labpolisity-text a {
+  color: #2196F3;
+  text-decoration: underline;
+  margin-left: 3px;
+}
+
+.labpolisity-text::before {
+  display: block;
+  /* align-content: center; */
+  content: "";
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border: 2px solid #212121;
+  margin-top: 4px;
+  margin-right: 7px;
+  border-radius: 4px;
+}
+
+.input-check:checked + .labpolisity-text::before {
+  background: #2196F3;
+  border: 0;
+  background-image: url(../images/Vector\ \(9\)\ \(1\).svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
+
+.visually-hedden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.input-check {
+  display: flex;
+}
+
+.form-input:hover ~ .form-swg {
+  fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus ~ .form-swg {
+  fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttonform {
+  display: flex;
+  padding: 10px 55px;
+  background: #2196F3;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFFFFF;
+  margin-top: 30px;
+  border: 0;
+}
+
+.svgform-accomod {
+  display: block;
+  justify-content: center;
+  margin-left: 12px;
+}/*# sourceMappingURL=main.css.map */
